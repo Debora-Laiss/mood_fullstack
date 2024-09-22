@@ -15,7 +15,7 @@ const App = () => {
     api.get('/moodRecord')
       .then(response => setMoodRecord(response.data.body))
       .catch(error => console.error('Error fetching mood records:', error));
-  }, []);
+  }, [moodRecord]);
 
   const addMoodRecord = async (mood, stressLevel, anxietyLevel, note) => {
     const date = new Date().toISOString(); // Adiciona a data atual
@@ -36,10 +36,13 @@ const App = () => {
   };
 
   // Função para atualizar um registro específico
-  const updateMoodRecord = (id, updatedRecord) => {
-    setMoodRecord(moodRecord.map((record) =>
-      record._id === id ? updatedRecord : record
-    ));
+  const updateMoodRecord = async (id, updatedRecord) => {
+    try {
+      await api.put(`/moodRecord/${id}`);
+      setMoodRecord(moodRecord.filter((record) => record._id !== id));
+  } catch (error) {
+      console.error('Error update mood record:', error);
+  }
   };
 
   const deleteMoodRecord = async (id) => {
