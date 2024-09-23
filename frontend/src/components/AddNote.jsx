@@ -14,9 +14,9 @@ const AddNote = ({ handleAddNote }) => {
 	const handleSaveClick = async () => {
 		if (noteText.trim().length > 0) {
 			const date = new Date().toISOString();
-			const mood = 'happy'; // Exemplo, deve ser definido pelo usuário
-			const stressLevel = 0; // Exemplo, deve ser definido pelo usuário
-			const anxietyLevel = 0; // Exemplo, deve ser definido pelo usuário
+			const mood = 'happy';
+			const stressLevel = 0;
+			const anxietyLevel = 0; 
 
 			try {
 				await api.post('/moodRecord', {

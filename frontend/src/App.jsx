@@ -4,6 +4,9 @@ import api from './services/apiService';
 import NotesList from './components/NotesList';
 import Search from './components/Search';
 import Header from './components/Header';
+import Home from './components/Home';
+import Footer from './components/Footer';
+
 
 const App = () => {
   const [moodRecord, setMoodRecord] = useState([]);
@@ -66,6 +69,9 @@ const App = () => {
         {/* Header com o botão de alternância do Dark Mode */}
         <Header handleToggleDarkMode={handleToggleDarkMode} />
 
+        {/* O home */}
+        <Home />
+
         {/* Componente de pesquisa */}
         <Search handleSearchNote={setSearchText} />
 
@@ -78,6 +84,7 @@ const App = () => {
           handleDeleteNote={deleteMoodRecord}
 		  handleUpdateNote={updateMoodRecord}
         />
+        <Footer />
       </div>
     </div>
   );

@@ -2,13 +2,13 @@ import React from 'react';
 
 const Header = ({ handleToggleDarkMode }) => {
 	return (
-		<div className='header'>
+		<header className='header'>
 			<h1>MoodRecord</h1>
 			<nav>
 				<ul className='menu'>
 					<li><a href='#home'>Home</a></li>
 					<li><a href='#about'>About</a></li>
-					<li><a href='#contact'>Contact</a></li>
+					<li><a href='#application'>Application</a></li>
 				</ul>
 			</nav>
 			<button
@@ -17,11 +17,11 @@ const Header = ({ handleToggleDarkMode }) => {
 						(previousDarkMode) => !previousDarkMode
 					)
 				}
-				className='save'
+				className='toggle-mode-button'
 			>
 				Toggle Mode
 			</button>
-		</div>
+		</header>
 	);
 };
 

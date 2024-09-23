@@ -60,7 +60,7 @@ const Note = ({ id, text, date }) => {
 
         {/* Ícone de atualização */}
         <MdEdit
-          onClick={handleUpdateClick} // Chama a função de atualizar
+          onClick={handleUpdateClick} 
           className="edit-icon"
           size="1.3em"
         />
