@@ -5,6 +5,7 @@ import NotesList from './components/NotesList';
 import Search from './components/Search';
 import Header from './components/Header';
 import Home from './components/Home';
+import About from './components/About';
 import Footer from './components/Footer';
 
 
@@ -71,6 +72,9 @@ const App = () => {
 
         {/* O home */}
         <Home />
+
+        {/* O About */}
+        <About />
 
         {/* Componente de pesquisa */}
         <Search handleSearchNote={setSearchText} />
