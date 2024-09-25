@@ -18,6 +18,11 @@ body {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+.header :hover{
+    color: rgb(255, 240, 30);
+    transform: scale(1.10);
+}
+
 .menu {
   list-style: none;
   display: flex;
@@ -26,12 +31,12 @@ body {
 
 .menu li a {
   text-decoration: none;
-  color: #333;
+  color: rgb(112, 181, 226);
   font-weight: bold;
 }
 .toggle-mode-button {
 	padding: 5px 10px;
-	background-color: #7eb2e9;
+	background-color: rgb(112, 181, 226);
 	color: white;
 	border: none;
 	border-radius: 5px;
