@@ -1,9 +1,9 @@
 # MoodRecord Fullstack
 
-Bem-vindo ao **MoodRecord API**! 🌟 
+Bem-vindo ao **MoodRecord Fullstack**! 🌟 
 
-Esta API foi desenvolvida para monitorar e gerenciar o estado emocional dos usuários de forma prática e acessível.
-Utilize esta API para criar, ler, atualizar e excluir registros de humor, promovendo um melhor acompanhamento da saúde mental.
+Esta aplicação foi desenvolvida para monitorar e gerenciar o estado emocional dos usuários de forma prática e acessível.
+Utilize esta API para criar, ler, atualizar e excluir registros de humor, promovendo um melhor acompanhamento dos seus momentos atravez do registro.
 
 
 ## 📁 Arquivos do FRONTEND
