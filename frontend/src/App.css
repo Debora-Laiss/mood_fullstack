@@ -170,9 +170,7 @@ textarea:focus {
 	outline: none;
 }
 
-/* .footer-section-one {
-  border: 2px solid blue;
-} */
+/* Footer */
 .footer-section-two {
 	flex: 1;
 	display: flex;
@@ -200,4 +198,120 @@ textarea:focus {
 	margin-right: 1.25rem;
 	color: #585858;
 	
+  }
+
+  /* Para telefones */
+@media (max-width: 600px) {
+	.header {
+		flex-direction: column;
+		align-items: flex-start;
+	  }
+	
+	/* About Section */
+	.about {
+	  padding: 10px;
+	  text-align: center;
+	}
+	.about img {
+	  width: 100%;
+	  height: auto;
+	  margin-bottom: 15px;
+	}
+	.about h1 {
+	  font-size: 1.5rem;
+	}
+	.about p {
+	  font-size: 1rem;
+	}
+  
+	/* Footer Section */
+	.footer-section-columns {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	.footer-icons {
+		justify-content: center;
+	  
+	}
+	.footer-section-columns span {
+	  text-align: center;
+	  flex-direction: column;
+	}
+  
+	/* Home Section */
+	.home-bannerImage-container {
+	  flex-direction: column;
+	}
+	.home-text-section {
+	  flex-direction: column;
+	  padding: 20px;
+	}
+	.home-text-section h1 {
+	  font-size: 2rem;
+	  text-align: center;
+	}
+	.home-image-section img {
+	  width: 100%;
+	  height: auto;
+	}
+  }
+  
+  /* Para tablets */
+  @media (min-width: 601px) and (max-width: 1024px) {
+	/* About Section */
+	.about {
+	  padding: 20px;
+	}
+	.about img {
+	  width: 80%;
+	  margin: 0 auto;
+	  margin-bottom: 20px;
+	}
+	.about h1 {
+	  font-size: 2rem;
+	}
+	.about p {
+	  font-size: 1.1rem;
+	}
+  
+	/* Footer Section */
+	.footer-section-columns {
+	  flex-direction: row;
+	  justify-content: space-between;
+	}
+	.footer-section-columns span {
+	  text-align: left;
+	}
+  
+	/* Home Section */
+	.home-bannerImage-container {
+	  margin: 40px 0;
+	}
+	.home-text-section {
+	  flex-direction: column;
+	  align-items: center;
+	  padding: 30px;
+	}
+	.home-text-section h1 {
+	  font-size: 2.5rem;
+	}
+	.home-image-section img {
+	  width: 80%;
+	  margin-bottom: 50px;
+	}
+  }
+  
+  /* Para desktops */
+  @media (min-width: 1025px) {
+	body {
+	  font-size: 15px;
+	}
+  
+	.container {
+	  max-width: 1100px;
+	}
+  
+	.notes-list {
+	  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	}
   }
